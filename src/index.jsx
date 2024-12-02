@@ -9,8 +9,15 @@ const root = createRoot(document.getElementById("root"));
  * excited to be learning React :)
  *
  * Render the Page component.
+ *
  */
+
+function header () {
+  <h1>Reasons I'm excited to learn React</h1>
+}
 function page (){
+  <>
+  <header />
   <ol>
     <li>
       It's a framework
@@ -19,6 +26,8 @@ function page (){
       It's a library
     </li>
   </ol>
+  </>
+
 }
 
 root.render(<page />);
